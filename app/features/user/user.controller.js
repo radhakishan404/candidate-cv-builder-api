@@ -36,7 +36,7 @@ const addUser = async (req, res, next) => {
         let header = headerTemplate(userData);
         let footer = footerTemplate(userData);
 
-        createListenPdf(html, header, footer, userData._id);
+        await createListenPdf(html, header, footer, userData._id);
 
         responseSend(res, 201, "User Created Successfully", userData);
     } catch (error) {

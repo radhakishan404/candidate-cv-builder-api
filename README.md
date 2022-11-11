@@ -38,4 +38,3 @@
     6. After successfully creation of document, we pass the result of user in a helper function which create the pdf file using ```puppeteer```.
     7. We have separate template for body, header and the footer of resume. you can check that inside ```app->templates->condidateTemplate.js``` file.
     8. We pass our data inside that template and replace all necessary documents for a dynamic smooth operation and load it into pupeeteer page.
-    9. pupeeteer functionality happen in background and after sometime it generate the pdf file of candidate which we can download from list of user in frontend section.
